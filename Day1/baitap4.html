@@ -27,11 +27,10 @@
         padding: 0px 10px;
         border: 1px solid #ccc;
         margin-top: 20px;
-        width: 390px;
+        width: 380px;
         border-radius: 25px;
-        background-color: #CFD2CF;
+        background-color: #cfd2cf;
         font-weight: bold;
-
       }
 
       input {
@@ -39,52 +38,84 @@
         border-radius: 10px;
       }
 
-      .search {
-        display: flex;
-    }
+      button {
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #277bc0;
+      }
 
-    .btn {
-        background-color: #277BC0;
-    }
+      #search {
+        padding-right: 0px;
+      }
+
+      .btn {
+        background-color: #277bc0;
+      }
+
+      .list-user ul {
+        list-style: none;
+        margin: 0px;
+        padding: 10px 0px;
+      }
+
+      .list-user li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        width: 380px;
+        padding: 20px;
+        border: 1px solid black;
+        margin: 10px 10px 10px 0px;
+        border-radius: 20px;
+        background-color: #cfd2cf;
+        
+      }
     </style>
   </head>
   <body>
     <header>
       <div class="head">
-        <input type="text" id="name" placeholder="Tên" />
-        <input type="text" id="phone" placeholder="Điện thoại" />
-        <input class="btn" type="submit" id="add" name="add" value="Thêm" />
-        <hr />
+        <form id="addUser" class="addUser" action="">
+          <input type="text" id="name" placeholder="Tên" />
+          <input type="text" id="phone" placeholder="Điện thoại" />
+          <button id="add">Thêm</button>
+          <hr />
+        </form>
       </div>
 
       <div class="search">
-        <input type="text" id="search" placeholder="Tìm kiếm" style="width:235px; margin-right: 5px;"/>
-        <div class="button">
-          <input class="btn" type="submit" id="search-btn" name="search" value="Tìm" />
-          <input class="btn" type="submit" id="delete" name="search" value="Xoá Trùng" />
-        </div>
+        <form id="searchUser" class="searchUser" action="">
+          <input
+            type="text"
+            id="search"
+            placeholder="Tìm kiếm"
+            style="width: 235px; margin-right: 5px"
+          />
+            <input
+              class="btn"
+              type="submit"
+              id="search-btn"
+              name="search"
+              value="Tìm"
+            />
+            <input
+              class="btn"
+              type="submit"
+              id="delete"
+              name="search"
+              value="Xoá Trùng"
+            />
+        </form>
       </div>
 
       <div class="list-user">
-        <div class="person1">
-          <p></p>
-          <p></p>
-        </div>
-        <div class="person1">
-          <p></p>
-          <p></p>
-        </div>
-        <div class="person1">
-          <p>Bob</p>
-          <p>(572)-566-2397</p>
-        </div>
-        <div class="person1">
-          <p>Cris</p>
-          <p>(864)-309-4841</p>
-        </div>
-        <div id="person1" >
-
-        </div>
+        <ul>
+          <!-- <li>
+            <span>Bob</span>
+            <span>12345567</span>
+          </li> -->
+        </ul>
       </div>
     </header>
     <script src="baitap4.js"></script>
