@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danh Bạ</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+      }
+      header {
+        /* width: 500px;
+            height: 1000px; */
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 80px;
+        border: 1px solid #ccc;
+      }
+
+      .person1 {
+        display: flex;
+        width: 300px;
+        justify-content: space-between;
+        padding: 0px 10px;
+        border: 1px solid #ccc;
+        margin-top: 20px;
+        width: 390px;
+        border-radius: 25px;
+        background-color: #CFD2CF;
+        font-weight: bold;
+
+      }
+
+      input {
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+      .search {
+        display: flex;
+    }
+
+    .btn {
+        background-color: #277BC0;
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <input type="text" id="name" placeholder="Tên" />
+        <input type="text" id="phone" placeholder="Điện thoại" />
+        <input class="btn" type="submit" id="add" name="add" value="Thêm" />
+        <hr />
+      </div>
+
+      <div class="search">
+        <input type="text" id="search" placeholder="Tìm kiếm" style="width:235px; margin-right: 5px;"/>
+        <div class="button">
+          <input class="btn" type="submit" id="search-btn" name="search" value="Tìm" />
+          <input class="btn" type="submit" id="delete" name="search" value="Xoá Trùng" />
+        </div>
+      </div>
+
+      <div class="list-user">
+        <div class="person1">
+          <p></p>
+          <p></p>
+        </div>
+        <div class="person1">
+          <p></p>
+          <p></p>
+        </div>
+        <div class="person1">
+          <p>Bob</p>
+          <p>(572)-566-2397</p>
+        </div>
+        <div class="person1">
+          <p>Cris</p>
+          <p>(864)-309-4841</p>
+        </div>
+        <div id="person1" >
+
+        </div>
+      </div>
+    </header>
+    <script src="baitap4.js"></script>
+  </body>
+</html>
