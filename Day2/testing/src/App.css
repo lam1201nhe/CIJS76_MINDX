@@ -1,0 +1,39 @@
+/* .change-color {
+  color: pink;
+  font-size: 40px;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+} */
+
+.change-color:hover {
+  color: red;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+ul {
+  border: 1px solid black;
+  text-align: start;
+  padding: 15px;
+  width: 250px;
+  border-radius: 10px;
+  margin: 5px 0px;
+  
+}
+li {
+  list-style-type: none;
+}
+
+.age {
+  font-style: italic;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
